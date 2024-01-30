@@ -1,0 +1,513 @@
+$buttoncolor: rgb(202, 76, 36);
+$textcolor: white;
+$btnbefore: white;
+$color: rgb(45, 45, 72);
+@mixin fillin($buttoncolor) {
+  position: relative;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: $textcolor;
+  border: 2px white solid;
+  border-radius: 4px;
+  text-transform: uppercase;
+  outline: 0;
+  overflow: hidden;
+  background: $buttoncolor;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.08s ease-in;
+  -o-transition: 0.08s ease-in;
+  -ms-transition: 0.08s ease-in;
+  -moz-transition: 0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+@mixin fillInBefore($btnbefore) {
+  content: "";
+  position: absolute;
+  background: $btnbefore;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+nav {
+  background-color: $color;
+  img {
+    width: 200px;
+  }
+  ul {
+    gap: 3%;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  .search {
+    gap: 4%;
+  }
+  #login {
+    @include fillin(rgb(47, 45, 73));
+  }
+  #login:hover {
+    color: rgb(47, 45, 73);
+  }
+
+  #login:before {
+    @include fillInBefore($btnbefore);
+  }
+
+  #login:hover:before {
+    top: 0;
+  }
+  #sales {
+    @include fillin($buttoncolor);
+  }
+  #sales:hover {
+    color: rgb(47, 45, 73);
+  }
+
+  #sales:before {
+    @include fillInBefore($btnbefore);
+  }
+
+  #sales:hover:before {
+    top: 0;
+  }
+  #search {
+    width: 50px;
+  }
+  #search:hover {
+    background-color: rgb(92, 84, 84);
+  }
+}
+.section2 {
+  background-color: $color;
+  color: white;
+  display: flex;
+  padding-top: 100px;
+  .texts {
+    width: 600px;
+    padding-top: 80px;
+    padding-left: 10%;
+  }
+  h1 {
+    font-weight: 600px;
+    font-size: 40px;
+    align-items: center;
+  }
+  p {
+    width: 400px;
+    font-weight: 300px;
+    font-size: 15px;
+  }
+  #meet {
+    @include fillin($buttoncolor);
+  }
+  #meet::before {
+    @include fillInBefore($btnbefore);
+  }
+  #meet:hover {
+    color: rgb(47, 45, 73);
+  }
+
+  #meet:hover:before {
+    top: 0;
+  }
+  img {
+    width: 40rem;
+  }
+}
+
+// come back to me %
+.section3 {
+  //   padding: 0% 5%;
+  gap: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  background-color: rgb(241, 247, 250);
+  img {
+    width: 150px;
+    opacity: 0.3;
+  }
+  img:hover {
+    opacity: 1;
+  }
+}
+
+.section4 {
+  padding-top: 8%;
+  h1 {
+    font-size: 30px;
+    font-weight: 700px;
+    padding-bottom: 5%;
+  }
+  button {
+    color: black;
+  }
+  .insurance {
+    display: flex;
+    padding-top: 50px;
+  }
+}
+.textnav {
+  h3 {
+    font-weight: 600px;
+  }
+  p {
+    width: 550px;
+  }
+  img {
+    padding-right: 20px;
+  }
+  a {
+    color: rgb(202, 76, 36);
+    font-size: 20px;
+    font-weight: 400px;
+  }
+}
+.img-nav {
+  padding-top: 5%;
+  img {
+    width: 670px;
+  }
+}
+.section5 {
+  background-color: rgb(244, 247, 251);
+  height: 300px;
+  padding-top: 5%;
+  h2 {
+    text-align: center;
+    color: $color;
+    padding-bottom: 3%;
+  }
+  .number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+  }
+  h1 {
+    color: $color;
+    font-size: 20;
+    font-weight: 700;
+  }
+  p {
+    color: $color;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+.section6 {
+  padding-top: 7%;
+  h1 {
+    color: $color;
+    text-align: center;
+    padding-bottom: 4%;
+  }
+  #enable {
+    color: $color;
+    text-align: center;
+    padding-bottom: 4%;
+    font-size: 20;
+  }
+  .numbering {
+    background-color: $color;
+    width: 45px;
+    border-radius: 35px;
+    margin-bottom: 20%;
+    margin-left: 30%;
+  }
+  h5 {
+    font-weight: 1000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  p {
+    width: 200px;
+    text-align: center;
+  }
+  .payment {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+  }
+  h4 {
+    font-size: large;
+  }
+}
+.section7 {
+  background: rgb(180, 82, 119);
+  background: linear-gradient(
+    302deg,
+    rgba(180, 82, 119, 1) 4%,
+    rgba(211, 111, 98, 1) 59%,
+    rgba(232, 131, 84, 1) 100%
+  );
+  padding-top: 5%;
+  padding-bottom: 3%;
+  margin-top: 10%;
+  h2 {
+    color: $textcolor;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 3%;
+  }
+  h5 {
+    color: $textcolor;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 3%;
+  }
+  button {
+    height: 50px;
+    @include fillin(rgb(47, 45, 73));
+    margin: 0% 40%;
+  }
+  button:hover {
+    color: rgb(47, 45, 73);
+  }
+  button:before {
+    @include fillInBefore($btnbefore);
+  }
+  button:hover:before {
+    top: 0;
+  }
+  .part {
+    margin: 1% 8%;
+    background: rgb(157, 78, 107);
+    background: linear-gradient(
+      321deg,
+      rgba(157, 78, 107, 1) 4%,
+      rgba(176, 95, 94, 1) 45%,
+      rgba(188, 108, 85, 1) 92%
+    );
+    padding-bottom: 2%;
+  }
+}
+.section8 {
+  background-color: $color;
+  height: 250px;
+  p {
+    align-items: center;
+    text-align: center;
+    padding: 2% 25%;
+    color: white;
+  }
+  h4 {
+    color: white;
+    font-weight: 600;
+    text-align: center;
+  }
+  #line {
+    font-size: 35px;
+    font-weight: 600;
+    padding: 0% 1.5%;
+  }
+}
+.section9 {
+  padding-top: 3%;
+  margin-bottom: 4%;
+  .text {
+    padding-top: 5%;
+  }
+  h3 {
+    color: $color;
+    font-weight: 600;
+  }
+  p {
+    width: 500px;
+  }
+  span {
+    padding-right: 3%;
+  }
+  h6 {
+    padding-bottom: 1%;
+  }
+
+  .row {
+    gap: 10%;
+  }
+}
+.section10 {
+  padding-top: 5%;
+  background-color: rgb(241, 247, 250);
+  h2 {
+    text-align: center;
+    color: $color;
+  }
+  .partnerLogo {
+    gap: 5%;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+  }
+  img {
+    width: 10rem;
+    opacity: 0.3;
+  }
+  img:hover {
+    opacity: 1;
+  }
+}
+.section12 {
+  background: rgb(183, 85, 118);
+  background: linear-gradient(
+    180deg,
+    rgba(183, 85, 118, 1) 4%,
+    rgba(210, 110, 99, 1) 45%,
+    rgba(210, 110, 99, 1) 92%
+  );
+  padding-top: 5%;
+  padding-bottom: 3%;
+  margin-top: 10%;
+  margin-bottom: 2%;
+
+  p {
+    align-items: center;
+    text-align: center;
+    // padding: 2% 25%;
+    color: white;
+  }
+  h5 {
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  #line {
+    font-size: 35px;
+    font-weight: 600;
+  }
+  div {
+    margin: 1% 12%;
+    background: rgb(171, 85, 107);
+    background: linear-gradient(
+      180deg,
+      rgba(171, 85, 107, 1) 4%,
+      rgba(188, 101, 95, 1) 45%,
+      rgba(198, 111, 87, 1) 92%
+    );
+    padding: 2% 0%;
+  }
+}
+.section13 {
+  h1 {
+    width: 45%;
+    color: $color;
+  }
+  p {
+    width: 50%;
+    font-size: large;
+    font-weight: 600;
+  }
+}
+.section14 {
+  background-image: url(https://res.cloudinary.com/dn2xrrll5/image/upload/v1706397024/cta-image_iblz8a.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 8%;
+  padding-bottom: 3%;
+  h3 {
+    padding-bottom: 3%;
+    color: $textcolor;
+    text-align: center;
+  }
+  p {
+    padding-bottom: 3%;
+    color: $textcolor;
+    text-align: center;
+  }
+
+  button {
+    height: 50px;
+    @include fillin($buttoncolor);
+    margin: 0% 40%;
+  }
+  button:hover {
+    color: rgb(47, 45, 73);
+  }
+  button:before {
+    @include fillInBefore(#ca876d);
+  }
+  button:hover:before {
+    top: 0;
+  }
+}
+
+.section15 {
+  background-color: $color;
+  padding: 8% 3% 0% 2%;
+  display: flex;
+  #footerLogo {
+    width: 10rem;
+  }
+  .footerLogo {
+    padding-right: 10%;
+  }
+  .mediaLogo {
+    width: 200px;
+    padding-top: 3%;
+  }
+
+  .mediaLogo img {
+    width: 1.9rem;
+  }
+  h5 {
+    color: $textcolor;
+    width: 100px;
+    padding-bottom: 2%;
+    text-align: center;
+  }
+  .footerText {
+    display: flex;
+  }
+  .methods {
+    width: 150px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    color: $textcolor;
+    padding: 0% 1%;
+  }
+}
+.section16 {
+  padding-top: 10%;
+  background-color: $color;
+  display: flex;
+  padding: 8% 12% 0% 2%;
+  #p1 {
+    color: $textcolor;
+    font-weight: 700px;
+    font-size: 15px;
+  }
+  #p2 {
+    color: $textcolor;
+    font-weight: 700px;
+    font-size: 15px;
+    width: 80%;
+  }
+  button {
+    background-color: $buttoncolor;
+    height: 70px;
+    width: 50px;
+    border-radius: 8px;
+  }
+  button:hover {
+    background-color: $textcolor;
+  }
+}
