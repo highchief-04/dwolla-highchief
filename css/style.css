@@ -1,5 +1,6 @@
 nav {
   background-color: rgb(45, 45, 72);
+  width: 100%;
 }
 nav img {
   width: 200px;
@@ -94,7 +95,7 @@ nav #sales:hover:before {
   top: 0;
 }
 nav #search {
-  width: 50px;
+  width: 3rem;
 }
 nav #search:hover {
   background-color: rgb(92, 84, 84);
@@ -107,7 +108,7 @@ nav #search:hover {
   padding-top: 100px;
 }
 .section2 .texts {
-  width: 600px;
+  width: 45rem;
   padding-top: 80px;
   padding-left: 10%;
 }
@@ -159,19 +160,19 @@ nav #search:hover {
   top: 0;
 }
 .section2 img {
-  width: 40rem;
+  width: 35rem;
 }
 
 .section3 {
-  gap: 40px;
+  gap: 3%;
   align-items: center;
   display: flex;
   justify-content: center;
-  height: 200px;
+  height: 300px;
   background-color: rgb(241, 247, 250);
 }
 .section3 img {
-  width: 150px;
+  width: 13%;
   opacity: 0.3;
 }
 .section3 img:hover {
@@ -186,9 +187,6 @@ nav #search:hover {
   font-weight: 700px;
   padding-bottom: 5%;
 }
-.section4 button {
-  color: black;
-}
 .section4 .insurance {
   display: flex;
   padding-top: 50px;
@@ -198,7 +196,7 @@ nav #search:hover {
   font-weight: 600px;
 }
 .textnav p {
-  width: 550px;
+  width: 50%;
 }
 .textnav img {
   padding-right: 20px;
@@ -213,13 +211,14 @@ nav #search:hover {
   padding-top: 5%;
 }
 .img-nav img {
-  width: 670px;
+  width: 40rem;
 }
 
 .section5 {
   background-color: rgb(244, 247, 251);
   height: 300px;
   padding-top: 5%;
+  padding: 0% 3%;
 }
 .section5 h2 {
   text-align: center;
@@ -230,7 +229,7 @@ nav #search:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15%;
+  gap: 10%;
 }
 .section5 h1 {
   color: rgb(45, 45, 72);
@@ -273,6 +272,8 @@ nav #search:hover {
 .section6 p {
   width: 200px;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .section6 .payment {
   display: flex;
@@ -350,12 +351,12 @@ nav #search:hover {
 
 .section8 {
   background-color: rgb(45, 45, 72);
-  height: 250px;
+  height: 400px;
 }
 .section8 p {
   align-items: center;
   text-align: center;
-  padding: 2% 25%;
+  padding: 5% 25%;
   color: white;
 }
 .section8 h4 {
@@ -381,7 +382,7 @@ nav #search:hover {
   font-weight: 600;
 }
 .section9 p {
-  width: 500px;
+  width: 300px;
 }
 .section9 span {
   padding-right: 3%;
@@ -395,7 +396,7 @@ nav #search:hover {
 
 .section10 {
   padding-top: 5%;
-  background-color: rgb(241, 247, 250);
+  background-color: rgb(237, 246, 250);
 }
 .section10 h2 {
   text-align: center;
@@ -405,7 +406,7 @@ nav #search:hover {
   gap: 5%;
   display: flex;
   justify-content: center;
-  height: 200px;
+  padding: 0% 5% 5% 5%;
 }
 .section10 img {
   width: 10rem;
@@ -413,6 +414,13 @@ nav #search:hover {
 }
 .section10 img:hover {
   opacity: 1;
+}
+
+.section11 h1 {
+  color: rgb(45, 45, 72);
+}
+.section11 video {
+  width: 100%;
 }
 
 .section12 {
