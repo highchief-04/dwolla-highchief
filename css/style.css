@@ -462,6 +462,10 @@ nav #search:hover {
   font-size: large;
   font-weight: 600;
 }
+.section13 .card1:hover {
+  background-image: url("https://res.cloudinary.com/dn2xrrll5/image/upload/v1706714633/WhatsApp_Image_2024-01-31_at_2.22.33_PM_vs0amb.jpg");
+  background-size: contain;
+}
 
 .section14 {
   background-image: url(https://res.cloudinary.com/dn2xrrll5/image/upload/v1706397024/cta-image_iblz8a.svg);
