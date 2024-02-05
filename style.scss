@@ -34,9 +34,12 @@ $color: rgb(45, 45, 72);
   -webkit-transition: top 0.09s ease-in;
 }
 // come back to me hover
+.hero-section {
+  background-color: $color;
+}
 nav {
   background-color: $color;
-  width: 100%;
+  // width: 100%;
   img {
     width: 200px;
   }
@@ -125,7 +128,7 @@ nav {
     top: 0;
   }
   img {
-    width: 35rem;
+    width: 35%;
   }
 }
 
@@ -426,22 +429,55 @@ nav {
 }
 // come back for media query
 .section13 {
+  margin-bottom: 20%;
+  margin-top: 10%;
   h1 {
     width: 45%;
     color: $color;
   }
   p {
-    width: 50%;
+    // width: 50%;
     font-size: large;
     font-weight: 600;
   }
-  // .card1 {
-  //   background-image: url("https://res.cloudinary.com/dn2xrrll5/image/upload/v1706714633/WhatsApp_Image_2024-01-31_at_2.22.33_PM_vs0amb.jpg");
-  // }
-
+  .row {
+    gap: 5%;
+  }
+  .card1 {
+    transition: opacity 0.5s ease-in-out;
+    background-color: rgb(230, 230, 230);
+  }
   .card1:hover {
+    background-image: url("https://res.cloudinary.com/dn2xrrll5/image/upload/v1706714633/WhatsApp_Image_2024-01-31_at_2.22.33_PM_1_sk1lf2.jpg");
+    background-size: cover;
+    color: white;
+  }
+  .card1:hover .card-img-top {
+    opacity: 0;
+  }
+  .card2 {
+    transition: opacity 0.5s ease-in-out;
+    background-color: rgb(230, 230, 230);
+  }
+  .card2:hover {
     background-image: url("https://res.cloudinary.com/dn2xrrll5/image/upload/v1706714633/WhatsApp_Image_2024-01-31_at_2.22.33_PM_vs0amb.jpg");
-    background-size: contain;
+    background-size: cover;
+    color: white;
+  }
+  .card2:hover .card-img-top {
+    opacity: 0;
+  }
+  .card3 {
+    transition: opacity 0.5s ease-in-out;
+    background-color: rgb(230, 230, 230);
+  }
+  .card3:hover {
+    background-image: url("https://res.cloudinary.com/dn2xrrll5/image/upload/v1706714633/WhatsApp_Image_2024-01-31_at_2.22.34_PM_gl2jkp.jpg");
+    background-size: cover;
+    color: white;
+  }
+  .card3:hover .card-img-top {
+    opacity: 0;
   }
 }
 .section14 {
